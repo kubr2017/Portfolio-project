@@ -1,6 +1,0 @@
-#folder
-/stuff/*
-
-#files
-.gitignore
-*.pdf
