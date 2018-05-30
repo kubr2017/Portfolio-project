@@ -65,7 +65,7 @@ h1{
 }
 
 input{
-  display:none;
+  /* display:none; */
 }
 
 .field{
@@ -76,6 +76,7 @@ input{
 #left-field{
   bottom: 260px;
   left: -5px;
+
 }
 
 #right-field{
@@ -83,20 +84,19 @@ input{
   right:0.5%;
 }
 
-
-.arrows button {
-  padding: 0;
+.arrows{
+  width:20px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 2em;
   font-family: "sans-serif";
-  padding: 0 9%;
+  padding: 0 5%;
   background: linear-gradient(#e5e5e5,#aaaaaa);
   box-shadow: 3px 3px 3px black;
 }
 
 
-.arrows button:active {
+.arrows:active {
   box-shadow: 0 2px black;
   transform: translateY(2px);
 }
@@ -242,21 +242,21 @@ footer{
   transition: left 1s ease-in;
 }
 
-.field .arrows button{
+.field .arrows label{
   display: none;
 }
 
-#first:checked ~ .field #left-arrow button:nth-of-type(4),
-#second:checked ~ .field #left-arrow button:nth-of-type(1),
-#third:checked ~ .field #left-arrow button:nth-of-type(2),
-#forth:checked ~ .field #left-arrow button:nth-of-type(3){
+#first:checked ~ .field #left-arrow label:nth-of-type(4),
+#second:checked ~ .field #left-arrow label:nth-of-type(1),
+#third:checked ~ .field #left-arrow label:nth-of-type(2),
+#forth:checked ~ .field #left-arrow label:nth-of-type(3){
   display:inline;
 }
 
-#first:checked ~ .field #right-arrow button:nth-of-type(2),
-#second:checked ~ .field #right-arrow button:nth-of-type(3),
-#third:checked ~ .field #right-arrow button:nth-of-type(4),
-#forth:checked ~ .field #right-arrow button:nth-of-type(1){
+#first:checked ~ .field #right-arrow label:nth-of-type(2),
+#second:checked ~ .field #right-arrow label:nth-of-type(3),
+#third:checked ~ .field #right-arrow label:nth-of-type(4),
+#forth:checked ~ .field #right-arrow label:nth-of-type(1){
   display:inline;
 }
 
