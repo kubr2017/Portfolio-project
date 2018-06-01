@@ -1,6 +1,5 @@
 body{
   font-family: 'Arial', sans-serif;
-  height: 100%;
 }
 
 header{
@@ -28,88 +27,128 @@ h1{
   text-align: center;
   margin-bottom: 0.3%;
 }
+
 .general-notes{
   text-align: center;
   display: block;
 }
+
 .slider{
   width: 55%;
-  position: relative;
-  left: 22.5%;
-  display: inline-block;
-  border: 1px solid blue;
-  margin-top: 1%;
+  display: block;
+  /* border: 1px solid blue; */
+  margin: 1% auto;
 }
 
 .window-frame{
-  width: 100%;
-  border: 1px solid orange;
+  /* border: 1px solid red; */
+  position: relative;
 }
+
 .window{
-  width:90%;
-  margin: 0 0.25%;
-  border: 1px solid green;
-}
-
-.film-frame{
-  border: 1px solid yellow;
-  width: 100%;
-}
-
-.film-frame img{
-  border: 1px solid red;
-  width: 100%;
   display: block;
+  width: 90%;
+  /* border: 1px solid blue; */
   margin: 0 auto;
-
-
+  box-shadow: 10px 10px 5px black;
 }
 
-
-.window-frame>div{
-  display: inline-block;
-
+.window img{
+  display: none;
+  width:100%;
 }
-/* .window-frame .arrows:nth-of-type(1){
-  margin-left: auto;
-}
-.window-frame .arrows:nth-of-type(2){
-  margin-right: auto;
+
+/* .window img:nth-of-type(1){
+  display: block;
+
 } */
 
 .arrows{
   font-size: 2em;
-  /* padding: 0 0.5%; */
   border-radius: 5px;
+  padding: 0.5%;
+  width: 2.5%;
   background: linear-gradient(#e5e5e5,#aaaaaa);
-  position: relative;
-  bottom: 150px;
-  width: 3%;
-  border: 1px solid red;
+  position: absolute;
+  top: 45%;
+  box-shadow: 10px 10px 5px black;
 }
-.film{
-  padding: 0 0;
-}
-.film .film-frame{
-  display: none;
-  /* text-align: center; */
-}
-.film .film-frame:nth-of-type(1){
-  display:block;
+
+#right-arrow{
+  right: 0;
 }
 
 .tape-frame{
-  /* height: 50px; */
-  /* margin: auto; */
-  padding: 5%;
-  text-align: center;
+  display: block;
+  margin:3% 0.5%;
 }
 
 .tape .small-pic{
-  display:inline-block;
-  max-width: 23%;
+  display: inline-block;
+  width: 21%;
+  margin: 0 0.5%;
 }
 
-.small-pic img{
-  max-width: 100%;
+.small-pic label img{
+  width: 100%;
+}
+
+/*Slider window logic -------------------------------*/
+
+input{
+   display: none; 
+}
+
+#first:checked ~ .slider .window-frame .window img:nth-of-type(1){
+  display:block;
+  transition: display 3s ease-in;
+}
+
+#second:checked ~ .slider .window-frame .window img:nth-of-type(2){
+  display:block;
+  transition: display 3s ease-in;
+}
+
+#third:checked ~ .slider .window-frame .window img:nth-of-type(3){
+  display:block;
+  transition: display 1s ease-in;
+}
+
+#forth:checked ~ .slider .window-frame .window img:nth-of-type(4){
+  display:block;
+  transition: display 1s ease-in;
+}
+
+
+
+/* Buttons logic ------------------------------------------------*/
+
+.arrows label{
+  display: none;
+}
+
+#first:checked ~ .slider .window-frame #left-arrow label:nth-of-type(4),
+#second:checked ~ .slider .window-frame #left-arrow label:nth-of-type(1),
+#third:checked ~ .slider .window-frame #left-arrow label:nth-of-type(2),
+#forth:checked ~ .slider .window-frame #left-arrow label:nth-of-type(3){
+  display:inline;
+}
+
+#first:checked ~ .slider .window-frame #right-arrow label:nth-of-type(2),
+#second:checked ~ .slider .window-frame #right-arrow label:nth-of-type(3),
+#third:checked ~ .slider .window-frame #right-arrow label:nth-of-type(4),
+#forth:checked ~ .slider .window-frame #right-arrow label:nth-of-type(1){
+  display:inline;
+}
+
+/* tape-frame logic ------------------------------------*/
+
+#first:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(1),
+#second:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(2),
+#third:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(3),
+#forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(4){
+  width: 29%;
+  transform: translateY(5%);
+  box-shadow: 10px 10px 5px black;
+
 }
