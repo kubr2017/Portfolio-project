@@ -26,20 +26,49 @@ padding: 1%;
 
 h1{
   text-align: center;
+  margin-bottom: 0.3%;
 }
 .general-notes{
   text-align: center;
   display: block;
 }
 .slider{
-
-
+  width: 55%;
   position: relative;
-  left: 25%;
+  left: 22.5%;
   display: inline-block;
+  border: 1px solid blue;
+  margin-top: 1%;
 }
+
+.window-frame{
+  width: 100%;
+  border: 1px solid orange;
+}
+.window{
+  width:90%;
+  margin: 0 0.25%;
+  border: 1px solid green;
+}
+
+.film-frame{
+  border: 1px solid yellow;
+  width: 100%;
+}
+
+.film-frame img{
+  border: 1px solid red;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+
+
+}
+
+
 .window-frame>div{
   display: inline-block;
+
 }
 /* .window-frame .arrows:nth-of-type(1){
   margin-left: auto;
@@ -50,32 +79,37 @@ h1{
 
 .arrows{
   font-size: 2em;
-  padding: 0 0.5%;
+  /* padding: 0 0.5%; */
   border-radius: 5px;
   background: linear-gradient(#e5e5e5,#aaaaaa);
   position: relative;
   bottom: 150px;
+  width: 3%;
+  border: 1px solid red;
 }
 .film{
   padding: 0 0;
 }
 .film .film-frame{
   display: none;
-  padding: 0 0;
+  /* text-align: center; */
 }
 .film .film-frame:nth-of-type(1){
-  display: inline-block;
+  display:block;
 }
 
 .tape-frame{
-  height: 50px;
+  /* height: 50px; */
   /* margin: auto; */
+  padding: 5%;
+  text-align: center;
 }
 
 .tape .small-pic{
   display:inline-block;
+  max-width: 23%;
 }
 
-.small-pic>img{
-  max-width: 30%;
+.small-pic img{
+  max-width: 100%;
 }
