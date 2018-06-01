@@ -36,6 +36,7 @@ h1{
 
   position: relative;
   left: 25%;
+  display: inline-block;
 }
 .window-frame>div{
   display: inline-block;
@@ -68,5 +69,13 @@ h1{
 
 .tape-frame{
   height: 50px;
-  margin: auto;
+  /* margin: auto; */
+}
+
+.tape .small-pic{
+  display:inline-block;
+}
+
+.small-pic>img{
+  max-width: 30%;
 }
