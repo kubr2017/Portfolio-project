@@ -76,14 +76,14 @@ h2{
 
 
 .post-it{
-  width: 100%;
+  width: 96%;
   height: 7%;
   position: absolute;
   bottom: 0;
   background-color: #cccccc;
   opacity: 0.9;
   color: black;
-  padding: 0.5% 1%;
+  padding: 1% 2%;
   font-size: 1.4em;
 }
 
@@ -123,19 +123,14 @@ h2{
   display: block;
   margin:3% 0.5%;
   margin-bottom: 10%;
-  /* border: 1px solid red; */
   position: relative;
 }
 
-/* .tape{
-    border: 1px solid blue;
-    /* margin: 5% 0; */
-
 .substrate{
   position: absolute;
-  height: 50%;
+  height: 55%;
   z-index: 50%;
-  bottom: 20%;
+  bottom: 13%;
   left: 0;
   width: 90%;
   background-color: grey;
