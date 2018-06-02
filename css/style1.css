@@ -5,6 +5,7 @@ body{
 header{
 border-bottom:2px solid #2d3c49;
 padding: 1%;
+margin-bottom: 5%;
 }
 
 .logo{
@@ -34,13 +35,17 @@ padding: 1%;
 
 h1,h2{
   text-align: center;
-  margin-bottom: 0.3%;
 }
 
 
 h1{
   font-family: "Petit Formal Script", cursive;
   font-size: 2.5em;
+  margin: 0;
+}
+
+h2{
+  margin: 3% 0;
 }
 
 .general-notes{
@@ -76,9 +81,9 @@ h1{
   position: absolute;
   bottom: 0;
   background-color: #cccccc;
-  opacity: 0.75;
+  opacity: 0.9;
   color: black;
-  padding: 0.2% 0.2%;
+  padding: 0.5% 1%;
   font-size: 1.4em;
 }
 
@@ -117,13 +122,33 @@ h1{
 .tape-frame{
   display: block;
   margin:3% 0.5%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+/* .tape{
+    border: 1px solid blue;
+    /* margin: 5% 0; */
+
+.substrate{
+  position: absolute;
+  height: 50%;
+  z-index: 50%;
+  bottom: 20%;
+  left: 0;
+  width: 90%;
+  background-color: grey;
+
 }
 
 .tape .small-pic{
   display: inline-block;
   width: 21%;
-  margin: 0 0.5%;
+  margin: 3% 0.5%
+  z-index:100;
+  position: relative;
+  margin-right: 1%;
 }
 
 .small-pic label img{
@@ -232,12 +257,12 @@ input{
 
 /* tape-frame logic ------------------------------------*/
 
-#first:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(1),
-#second:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(2),
-#third:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(3),
-#forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(4){
+#first:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(2),
+#second:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(3),
+#third:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(4),
+#forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(5){
   width: 29%;
   transform: translateY(5%);
   box-shadow: 10px 10px 5px black;
-
+  z-index:200;
 }
