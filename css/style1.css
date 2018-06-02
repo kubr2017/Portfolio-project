@@ -6,6 +6,7 @@ header{
 border-bottom:2px solid #2d3c49;
 padding: 1%;
 margin-bottom: 5%;
+position: relative;
 }
 
 .logo{
@@ -17,7 +18,8 @@ margin-bottom: 5%;
 }
 
 .vCard{
-  float:right;
+  position: absolute;
+  right: 0;
   text-align: right;
 }
  .name{
@@ -139,7 +141,7 @@ h2{
 
 .tape .small-pic{
   display: inline-block;
-  width: 21%;
+  width: 20.2%;
   margin: 3% 0.5%
   z-index:100;
   position: relative;
@@ -166,7 +168,7 @@ h2{
   width: 100%;
 }
 
-#photo-book .neighborhoods .area-name{
+/* #photo-book .neighborhoods */.area-name{
   position: absolute;
   height: 20%;
   bottom: 0;
@@ -260,4 +262,85 @@ input{
   transform: translateY(5%);
   box-shadow: 10px 10px 5px black;
   z-index:200;
+}
+
+
+/* Responsiveness with Media query ------------------------------------ */
+
+@media screen and (min-width:700px) and (max-width:1200px){
+
+  .name{
+   font-size: 2.3em;
+ }
+ .cpeciality{
+   font-size: 1.3em;
+ }
+ h1{
+   font-size: 2.3em;
+}
+ .arrows{
+   font-size: 1em;
+ }
+ .post-it{
+   font-size: 1em;
+ }
+  .area-name{
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:699px){
+  .name{
+   font-size: 2em;
+ }
+ .cpeciality{
+   font-size: 1em;
+ }
+ h1{
+   font-size: 2em;
+}
+.arrows{
+  font-size: 0.8em;
+}
+.post-it{
+  font-size: 0.7em;
+}
+  .area-name{
+    font-size: 1.7em;
+  }
+}
+
+
+@media screen and (min-width:300px) and (max-width:499px){
+
+  .logo img{
+    width: 35%;
+  }
+  .name{
+   font-size: 1.7em;
+ }
+ .cpeciality{
+   font-size: 0.7em;
+ }
+ h1{
+   font-size: 1.5em;
+}
+.arrows{
+  font-size: 0.3em;
+}
+.post-it{
+  font-size: 0.3em;
+}
+
+h2{
+  font-size: 1.3em;
+}
+  .area-name{
+    font-size: 1.5em;
+  }
+
+  .footer-content{
+    font-size: 0.7em;
+    text-align: left;
+  }
 }
