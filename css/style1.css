@@ -17,10 +17,10 @@ padding: 1%;
 
 .vCard{
   float:right;
+  text-align: right;
 }
  .name{
-  float: right;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .clear-fix{
@@ -29,7 +29,7 @@ padding: 1%;
 }
 
 .cpeciality{
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 h1,h2{
