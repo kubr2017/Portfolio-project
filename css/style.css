@@ -135,7 +135,7 @@ h2{
   z-index:100;
   position: relative;
   margin-right: 1%;
-  transform: translateX(5%);
+  transform: translateX(17%);
 }
 
 .small-pic label img{
@@ -252,7 +252,7 @@ input{
 #forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(5){
   width: 29%;
   transform: translateY(3%);
-  transform: translateX(3%);
+  transform: translateX(9%);
   box-shadow: 10px 10px 5px black;
   z-index:200;
 }
