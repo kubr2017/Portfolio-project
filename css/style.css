@@ -68,7 +68,7 @@ h2{
 
 .window{
   display: block;
-  width: 90%;
+  width: 87%;
   /* border: 1px solid blue; */
   margin: 0 auto;
   background-color: black;
@@ -100,15 +100,18 @@ h2{
 } */
 
 .arrows{
-  font-size: 2em;
+  /* font-size: 2em; */
   border-radius: 5px;
-  padding: 0.5%;
-  width: 2.5%;
-  background: linear-gradient(#e5e5e5,#aaaaaa);
+  /* padding: 0.5%; */
+  width: 5%;
+  /* background: linear-gradient(#e5e5e5,#aaaaaa); */
   position: absolute;
   top: 45%;
   box-shadow: 5px 5px 5px black;
+  overflow: hidden;
 }
+
+
 
 
 #right-arrow{
@@ -122,7 +125,7 @@ h2{
 
 .tape-frame{
   display: block;
-  margin:3% 0.5%;
+  margin: 3% auto;
   margin-bottom: 10%;
   position: relative;
 }
@@ -132,19 +135,20 @@ h2{
   height: 55%;
   z-index: 50%;
   bottom: 13%;
-  left: 0;
-  width: 90%;
+  left: 5%;
+  width: 85%;
   background-color: grey;
 
 }
 
 .tape .small-pic{
   display: inline-block;
-  width: 20.2%;
+  width: 20.1%;
   margin: 3% 0.5%
   z-index:100;
   position: relative;
   margin-right: 1%;
+  transform: translateX(5%);
 }
 
 .small-pic label img{
@@ -158,16 +162,16 @@ h2{
   grid-gap:0.5%;
 }
 
-#photo-book .neighborhoods{
+.neighborhoods{
   position: relative;
   margin-bottom: 1%;
 }
 
-#photo-book .neighborhoods img{
+.neighborhoods img{
   width: 100%;
 }
 
-/* #photo-book .neighborhoods */.area-name{
+.area-name{
   position: absolute;
   height: 20%;
   bottom: 0;
@@ -233,22 +237,24 @@ input{
 
 /* Buttons logic ------------------------------------------------*/
 
-.arrows label{
+.arrows label img{
   display: none;
 }
 
-#first:checked ~ .slider .window-frame #left-arrow label:nth-of-type(4),
-#second:checked ~ .slider .window-frame #left-arrow label:nth-of-type(1),
-#third:checked ~ .slider .window-frame #left-arrow label:nth-of-type(2),
-#forth:checked ~ .slider .window-frame #left-arrow label:nth-of-type(3){
-  display:inline;
+#first:checked ~ .slider .window-frame #left-arrow label:nth-of-type(4) img,
+#second:checked ~ .slider .window-frame #left-arrow label:nth-of-type(1) img,
+#third:checked ~ .slider .window-frame #left-arrow label:nth-of-type(2) img,
+#forth:checked ~ .slider .window-frame #left-arrow label:nth-of-type(3) img{
+  display:block;
+  width: 100%;
 }
 
-#first:checked ~ .slider .window-frame #right-arrow label:nth-of-type(2),
-#second:checked ~ .slider .window-frame #right-arrow label:nth-of-type(3),
-#third:checked ~ .slider .window-frame #right-arrow label:nth-of-type(4),
-#forth:checked ~ .slider .window-frame #right-arrow label:nth-of-type(1){
-  display:inline;
+#first:checked ~ .slider .window-frame #right-arrow label:nth-of-type(2) img,
+#second:checked ~ .slider .window-frame #right-arrow label:nth-of-type(3) img,
+#third:checked ~ .slider .window-frame #right-arrow label:nth-of-type(4) img,
+#forth:checked ~ .slider .window-frame #right-arrow label:nth-of-type(1) img{
+  display:block;
+  width: 100%;
 }
 
 /* tape-frame logic ------------------------------------*/
@@ -258,7 +264,8 @@ input{
 #third:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(4),
 #forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(5){
   width: 29%;
-  transform: translateY(5%);
+  transform: translateY(3%);
+  transform: translateX(3%);
   box-shadow: 10px 10px 5px black;
   z-index:200;
 }
@@ -277,9 +284,9 @@ input{
  h1{
    font-size: 2.3em;
 }
- .arrows{
+ /* .arrows{
    font-size: 1em;
- }
+ } */
  .post-it{
    font-size: 1em;
  }
@@ -298,9 +305,9 @@ input{
  h1{
    font-size: 2em;
 }
-.arrows{
+/* .arrows{
   font-size: 0.8em;
-}
+} */
 .post-it{
   font-size: 0.7em;
 }
@@ -324,9 +331,9 @@ input{
  h1{
    font-size: 1.5em;
 }
-.arrows{
+/* .arrows{
   font-size: 0.3em;
-}
+} */
 .post-it{
   font-size: 0.3em;
 }
