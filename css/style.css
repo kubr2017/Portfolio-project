@@ -58,7 +58,6 @@ h2{
 .slider{
   width: 55%;
   display: block;
-  /* border: 1px solid blue; */
   margin: 1% auto;
 }
 
@@ -69,7 +68,6 @@ h2{
 .window{
   display: block;
   width: 87%;
-  /* border: 1px solid blue; */
   margin: 0 auto;
   background-color: black;
   box-shadow: 10px 10px 5px black;
@@ -92,19 +90,9 @@ h2{
   height: 15%;
 }
 
-
-
-/* .window img:nth-of-type(1){
-  display: block;
-
-} */
-
 .arrows{
-  /* font-size: 2em; */
   border-radius: 3px;
-  /* padding: 0.5%; */
   width: 5%;
-  /* background: linear-gradient(#e5e5e5,#aaaaaa); */
   position: absolute;
   top: 45%;
   box-shadow: 5px 5px 5px black;
@@ -138,7 +126,6 @@ h2{
   left: 5%;
   width: 85%;
   background-color: grey;
-
 }
 
 .tape .small-pic{
@@ -284,9 +271,7 @@ input{
  h1{
    font-size: 2.3em;
 }
- /* .arrows{
-   font-size: 1em;
- } */
+
  .post-it{
    font-size: 1em;
  }
@@ -305,9 +290,7 @@ input{
  h1{
    font-size: 2em;
 }
-/* .arrows{
-  font-size: 0.8em;
-} */
+
 .post-it{
   font-size: 0.7em;
 }
@@ -331,9 +314,7 @@ input{
  h1{
    font-size: 1.5em;
 }
-/* .arrows{
-  font-size: 0.3em;
-} */
+
 .post-it{
   font-size: 0.3em;
 }
