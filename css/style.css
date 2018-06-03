@@ -1,174 +1,157 @@
-
 body{
   font-family: 'Arial', sans-serif;
 }
 
-.wrap{
-  width: 100%;
-  height: 100%;
-}
-
 header{
-  width: 100%;
-  height: 100px;
-  /* text-align: right; */
-  border-bottom: 2px solid #2d3c49;
-  margin-bottom: 1%;
-  font-size: 1.7em;
-  color: black;
-  clear: both;
-}
-
-
-.fname{
-  font-size: 1.5em;
-}
-
-.specialty{
-  font-size: 1em;
+border-bottom:2px solid #2d3c49;
+padding: 1%;
+margin-bottom: 5%;
+position: relative;
 }
 
 .logo{
   float:left;
 }
 
-.vCard{
-  text-align: right;
-  float:right;
-}
-
 .logo img{
-  width: 75%;
+  width:75%;
 }
 
-main{
-  width: 100%;
+.vCard{
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+ .name{
+  font-size: 2.5em;
 }
 
-main div{
-  display: inline-block;
+.clear-fix{
+  clear: both;
+  overflow: auto;
+}
+
+.cpeciality{
+  font-size: 1.5em;
 }
 
 h1,h2{
   text-align: center;
-  margin-bottom: 1%;
 }
-main p{
-  text-align: center;
-  margin-top: 0;
-}
+
 
 h1{
   font-family: "Petit Formal Script", cursive;
-  font-size:2.5em;
-  margin-top: 2%;
+  font-size: 2.5em;
+  margin: 0;
 }
 
-input{
-  display:none;
+h2{
+  margin: 3% 0;
 }
 
-.field{
-  width: 24%;
+.general-notes{
+  text-align: center;
+  display: block;
+}
+
+.slider{
+  width: 55%;
+  display: block;
+  /* border: 1px solid blue; */
+  margin: 1% auto;
+}
+
+.window-frame{
+  /* border: 1px solid red; */
   position: relative;
 }
 
-#left-field{
-  bottom: 260px;
-  left: -5px;
-
-}
-
-#right-field{
-  bottom: 260px;
-  right:0.5%;
-}
-
-.arrows{
-  width:20px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 2em;
-  font-family: "sans-serif";
-  padding: 0 5%;
-  background: linear-gradient(#e5e5e5,#aaaaaa);
-  box-shadow: 3px 3px 3px black;
-}
-
-
-.arrows:active {
-  box-shadow: 0 2px black;
-  transform: translateY(2px);
-}
-
-#slider{
-  width:50%;
-  height: 430px;
-  margin-bottom: 7%;
-}
-
-#window{
-  width: 98%;
-  height: 75%;
-  margin-top: 1%;
-  margin-bottom: 5%;
-  padding: 0.1%;
-  padding-left: 0.2%;
-  overflow: hidden;
+.window{
+  display: block;
+  width: 90%;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
   background-color: black;
-  box-shadow: 10px 10px 5px #111111;
+  box-shadow: 10px 10px 5px black;
 }
 
-#film{
-  width: 412%;
-  height: 100%;
-  position: relative;
-}
 
-#film div{
-  display:inline-block;
-  width: 24.3%;
-  height: 100%;
-  margin-right: 0.15%;
-}
-
-#film div img{
-  width: 100%;
-}
-
-#film div .post-it{
-  width:15%;
+.post-it{
+  width: 96%;
   height: 7%;
   position: absolute;
   bottom: 0;
   background-color: #cccccc;
-  opacity: 0.75;
+  opacity: 0.9;
   color: black;
-  padding: 0.2% 0.2%;
+  padding: 1% 2%;
   font-size: 1.4em;
-
 }
 
-#film div:nth-of-type(4) .post-it{
-  font-size: 1em;
-  height: 10%;
+.window .frame:nth-of-type(4) .post-it{
+  height: 15%;
 }
 
-#slider-box{
+
+
+/* .window img:nth-of-type(1){
+  display: block;
+
+} */
+
+.arrows{
+  font-size: 2em;
+  border-radius: 5px;
+  padding: 0.5%;
+  width: 2.5%;
+  background: linear-gradient(#e5e5e5,#aaaaaa);
+  position: absolute;
+  top: 45%;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+#right-arrow{
+  right: 0;
+}
+
+.arrows:active {
+  box-shadow: 2px 2px black;
+  transform: translateY(2px);
+}
+
+.tape-frame{
+  display: block;
+  margin:3% 0.5%;
+  margin-bottom: 10%;
   position: relative;
-  padding: 0.2%;
-  z-index: 100;
-  height: 19%;
-  top:5%;
-  background-color: #aaaaaa;
 }
 
-#slider-box img{
-  max-width: 23%;
-  margin-left: 0.4%;
-  margin-right: 0;
-  margin-top: -2.5%;
+.substrate{
+  position: absolute;
+  height: 55%;
+  z-index: 50%;
+  bottom: 13%;
+  left: 0;
+  width: 90%;
+  background-color: grey;
+
 }
+
+.tape .small-pic{
+  display: inline-block;
+  width: 20.2%;
+  margin: 3% 0.5%
+  z-index:100;
+  position: relative;
+  margin-right: 1%;
+}
+
+.small-pic label img{
+  width: 100%;
+}
+
 
 #photo-book{
   display: grid;
@@ -185,7 +168,7 @@ input{
   width: 100%;
 }
 
-#photo-book .neighborhoods .area-name{
+/* #photo-book .neighborhoods */.area-name{
   position: absolute;
   height: 20%;
   bottom: 0;
@@ -211,224 +194,153 @@ footer{
   background-color: #eeeeee;
 }
 
-#left-arrow{
-  float: right;
-}
 
-#left-arrow::after{
-  content: " ";
-  float: none;
-}
 
 /*Slider window logic -------------------------------*/
 
-#first:checked ~ #slider #window #film{
-  left:0;
-  transition: left 1s ease-in;
+input{
+   display: none;
 }
 
-#second:checked ~ #slider #window #film{
-  left:-101%;
-  transition: left 1s ease-in;
+.window .frame {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  padding: 0;
 }
 
-#third:checked ~ #slider #window #film{
-  left:-202%;
-  transition: left 1s ease-in;
+.window .frame img{
+  width:100%;
 }
 
-#forth:checked ~ #slider #window #film{
-  left:-304%;
-  transition: left 1s ease-in;
+#first:checked ~ .slider .window-frame .window .frame:nth-of-type(1){
+  display:block;
 }
 
-.field .arrows label{
+#second:checked ~ .slider .window-frame .window .frame:nth-of-type(2){
+  display:block;
+}
+
+#third:checked ~ .slider .window-frame .window .frame:nth-of-type(3){
+  display:block;
+}
+
+#forth:checked ~ .slider .window-frame .window .frame:nth-of-type(4){
+  display:block;
+}
+
+
+
+/* Buttons logic ------------------------------------------------*/
+
+.arrows label{
   display: none;
 }
 
-#first:checked ~ .field #left-arrow label:nth-of-type(4),
-#second:checked ~ .field #left-arrow label:nth-of-type(1),
-#third:checked ~ .field #left-arrow label:nth-of-type(2),
-#forth:checked ~ .field #left-arrow label:nth-of-type(3){
+#first:checked ~ .slider .window-frame #left-arrow label:nth-of-type(4),
+#second:checked ~ .slider .window-frame #left-arrow label:nth-of-type(1),
+#third:checked ~ .slider .window-frame #left-arrow label:nth-of-type(2),
+#forth:checked ~ .slider .window-frame #left-arrow label:nth-of-type(3){
   display:inline;
 }
 
-#first:checked ~ .field #right-arrow label:nth-of-type(2),
-#second:checked ~ .field #right-arrow label:nth-of-type(3),
-#third:checked ~ .field #right-arrow label:nth-of-type(4),
-#forth:checked ~ .field #right-arrow label:nth-of-type(1){
+#first:checked ~ .slider .window-frame #right-arrow label:nth-of-type(2),
+#second:checked ~ .slider .window-frame #right-arrow label:nth-of-type(3),
+#third:checked ~ .slider .window-frame #right-arrow label:nth-of-type(4),
+#forth:checked ~ .slider .window-frame #right-arrow label:nth-of-type(1){
   display:inline;
 }
 
-/* Slider-box logic ------------------------------------*/
+/* tape-frame logic ------------------------------------*/
 
-#first:checked~ #slider #slider-box label:nth-of-type(1) img,
-#second:checked~ #slider #slider-box label:nth-of-type(2) img,
-#third:checked~ #slider #slider-box label:nth-of-type(3) img,
-#forth:checked~ #slider #slider-box label:nth-of-type(4) img {
-  max-width: 27%;
-  margin-left: 0;
-  margin-right: 0;
-  box-shadow: 5px 5px 5px #111111;
-  z-index: 200;
-  position: relative;
-  top:7%;
+#first:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(2),
+#second:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(3),
+#third:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(4),
+#forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(5){
+  width: 29%;
+  transform: translateY(5%);
+  box-shadow: 10px 10px 5px black;
+  z-index:200;
 }
 
-/* Responsiveness--------------------------------------- */
 
-@media screen and (min-width:350px) and (max-width:499px){
-  header{
-    height: 70px;
-    font-size: 1em;
-  }
+/* Responsiveness with Media query ------------------------------------ */
 
-  h1{
-   font-size: 1.5em;
+@media screen and (min-width:700px) and (max-width:1200px){
+
+  .name{
+   font-size: 2.3em;
+ }
+ .cpeciality{
+   font-size: 1.3em;
+ }
+ h1{
+   font-size: 2.3em;
+}
+ .arrows{
+   font-size: 1em;
+ }
+ .post-it{
+   font-size: 1em;
+ }
+  .area-name{
+    font-size: 2em;
   }
+}
+
+@media screen and (min-width:500px) and (max-width:699px){
+  .name{
+   font-size: 2em;
+ }
+ .cpeciality{
+   font-size: 1em;
+ }
+ h1{
+   font-size: 2em;
+}
+.arrows{
+  font-size: 0.8em;
+}
+.post-it{
+  font-size: 0.7em;
+}
+  .area-name{
+    font-size: 1.7em;
+  }
+}
+
+
+@media screen and (min-width:300px) and (max-width:499px){
 
   .logo img{
-    width: 50%;
+    width: 35%;
   }
+  .name{
+   font-size: 1.7em;
+ }
+ .cpeciality{
+   font-size: 0.7em;
+ }
+ h1{
+   font-size: 1.5em;
+}
+.arrows{
+  font-size: 0.3em;
+}
+.post-it{
+  font-size: 0.3em;
+}
 
-  #slider{
-    width:99%;
-    height: 300px;
-  }
-
-  #slider-box img{
-    max-width: 23%;
-    margin-left: 0.1%;
-    margin-right: 0;
-  }
-
-  #film div .post-it{
-    width:24%;
-    height: 10%;
-    font-size: 1.1em;
-  }
-
-  #film div:nth-of-type(4) .post-it{
-    font-size: 1em;
-    height: 15%;
-  }
-
- #photo-book .neighborhoods .area-name{
-    font-size: 1.3em;
-  }
-
-  .field{
-    width:50px;
-    height:50px;
-    z-index: 200;
-    position: absolute;
-  }
-
-  #left-field{
-    left:-3%;
-    bottom: 45%;
-  }
-
-  #right-field{
-    bottom: 45%;
-    right:1%;
+h2{
+  font-size: 1.3em;
+}
+  .area-name{
+    font-size: 1.5em;
   }
 
   .footer-content{
     font-size: 0.7em;
-  }
-}
-
-
- @media screen and (min-width:500px) and (max-width:699px){
-   #slider{
-     width:97%;
-     height: 430px;
-   }
-
-   #slider-box img{
-     max-width: 23%;
-     margin-left: 0.1%;
-     margin-right: 0;
-   }
-
-   #photo-book .neighborhoods .area-name{
-      font-size: 1.7em;
-    }
-
-   .field{
-     width:50px;
-     height:50px;
-     z-index: 200;
-     position: absolute;
-   }
-
-   #left-field{
-     left:-2%;
-     bottom: 25%;
-   }
-
-   #right-field{
-     bottom: 25%;
-     right: 3%;
-   }
-
-   #film div .post-it{
-     width:24%;
-     height: 10%;
-     font-size: 1.1em;
-   }
-
-   .arrows{
-     width:20px;
-     font-size: 1.5em;
-     padding: 0 5%;
-   }
- }
-
- @media screen and (min-width:700px) and (max-width:899px){
-   #slider{
-     width:84%;
-     height: 430px;
-   }
-
-   .field{
-     width:7%;
-   }
-
-   #film div .post-it{
-     width:24%;
-     height: 10%;
-     font-size: 1.1em;
-   }
-
-   #photo-book .neighborhoods .area-name{
-      font-size: 1.9em;
-    }
-
-    .arrows{
-      width:20px;
-      font-size: 1.5em;
-      padding: 0 5%;
-    }
- }
-
-@media screen and (min-width:900px) and (max-width:1200px){
-  #slider{
-    width:57%;
-    height: 430px;
-  }
-
-  .field{
-    width:20%;
-  }
-  #photo-book .neighborhoods .area-name{
-     font-size: 1.9em;
-   }
-
-  #film div .post-it{
-    width:24%;
-    height: 7%;
-    font-size: 1.1em;
+    text-align: left;
   }
 }
