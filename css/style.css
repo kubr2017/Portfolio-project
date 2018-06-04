@@ -30,7 +30,7 @@ position: relative;
 }
 
 .v-card p{
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 0;
 }
 
@@ -261,7 +261,7 @@ input{
    font-size: 2.3em;
  }
  .v-card p{
-   font-size: 1.3em;
+   font-size: 0.7em;
  }
  h1{
    font-size: 2.3em;
@@ -276,11 +276,15 @@ input{
 }
 
 @media screen and (min-width:500px) and (max-width:699px){
+
+  .logo img{
+    width: 50%;
+  }
   .v-card{
-   font-size: 2em;
+   font-size: 2.1em;
  }
  .v-card p{
-   font-size: 1em;
+   font-size: 0.6em;
  }
  h1{
    font-size: 2em;
@@ -304,7 +308,7 @@ input{
    font-size: 1.7em;
  }
  .v-card p{
-   font-size: 0.7em;
+   font-size: 0.4em;
  }
  h1{
    font-size: 1.5em;
