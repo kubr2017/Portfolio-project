@@ -72,7 +72,6 @@ h2 {
   box-shadow: 10px 10px 5px black;
 }
 
-
 .post-it {
   width: 96%;
   height: 7%;
@@ -97,9 +96,6 @@ h2 {
   box-shadow: 5px 5px 5px black;
   overflow: hidden;
 }
-
-
-
 
 #right-arrow {
   right: 0;
@@ -140,7 +136,6 @@ h2 {
 .small-pic label img {
   width: 100%;
 }
-
 
 #photo-book {
   display: grid;
@@ -276,6 +271,7 @@ input {
  .window .frame:nth-of-type(4) .post-it {
    font-size: 1.2em;
  }
+
   .area-name {
     font-size: 2em;
   }
@@ -326,9 +322,11 @@ input {
   .logo img {
     width: 35%;
   }
+
   .v-card {
    font-size: 1.6em;
  }
+
  .v-card p {
    font-size: 0.5em;
  }
