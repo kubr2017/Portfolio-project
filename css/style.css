@@ -257,6 +257,10 @@ input{
 
 @media screen and (min-width:700px) and (max-width:1200px){
 
+  .slider{
+    width: 75%;
+  }
+
  .v-card{
    font-size: 2.3em;
  }
@@ -276,6 +280,10 @@ input{
 }
 
 @media screen and (min-width:500px) and (max-width:699px){
+
+  .slider{
+    width: 85%;
+  }
 
   .logo img{
     width: 50%;
@@ -300,6 +308,10 @@ input{
 
 
 @media screen and (min-width:300px) and (max-width:499px){
+
+  .slider{
+    width: 95%;
+  }
 
   .logo img{
     width: 35%;
