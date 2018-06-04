@@ -271,8 +271,8 @@ input{
    font-size: 2.3em;
 }
 
- .post-it{
-   font-size: 1em;
+ .window .frame:nth-of-type(4) .post-it{
+   font-size: 1.2em;
  }
   .area-name{
     font-size: 2em;
@@ -299,7 +299,10 @@ input{
 }
 
 .post-it{
-  font-size: 0.7em;
+  font-size: 1.1em;
+}
+.window .frame:nth-of-type(4) .post-it{
+  font-size: 1em;
 }
   .area-name{
     font-size: 1.7em;
@@ -327,7 +330,11 @@ input{
 }
 
 .post-it{
-  font-size: 0.3em;
+  font-size: 0.8em;
+}
+.window .frame:nth-of-type(4) .post-it{
+  font-size: 0.7em;
+  height: 13%;
 }
 
 h2{
