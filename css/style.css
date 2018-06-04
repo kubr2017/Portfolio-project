@@ -17,12 +17,10 @@ position: relative;
   width:75%;
 }
 
-.vCard{
+.v-card{
   position: absolute;
   right: 0;
   text-align: right;
-}
- .name{
   font-size: 2.5em;
 }
 
@@ -31,7 +29,7 @@ position: relative;
   overflow: auto;
 }
 
-.cpeciality{
+.v-card p{
   font-size: 1.5em;
 }
 
@@ -184,8 +182,6 @@ footer{
   background-color: #eeeeee;
 }
 
-
-
 /*Slider window logic -------------------------------*/
 
 input{
@@ -219,8 +215,6 @@ input{
 #forth:checked ~ .slider .window-frame .window .frame:nth-of-type(4){
   display:block;
 }
-
-
 
 /* Buttons logic ------------------------------------------------*/
 
