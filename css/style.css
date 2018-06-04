@@ -1,70 +1,70 @@
-body{
+body {
   font-family: 'Arial', sans-serif;
 }
 
-header{
+header {
 border-bottom:2px solid #2d3c49;
 padding: 1%;
 margin-bottom: 5%;
 position: relative;
 }
 
-.logo{
+.logo {
   float:left;
 }
 
-.logo img{
+.logo img {
   width:75%;
 }
 
-.v-card{
+.v-card {
   position: absolute;
   right: 0;
   text-align: right;
   font-size: 2.5em;
 }
 
-.clear-fix{
+.clear-fix {
   clear: both;
   overflow: auto;
 }
 
-.v-card p{
+.v-card p {
   font-size: 0.8em;
   margin: 0;
 }
 
-h1,h2{
+h1,h2 {
   text-align: center;
 }
 
 
-h1{
+h1 {
   font-family: "Petit Formal Script", cursive;
   font-size: 2.5em;
   margin: 0;
 }
 
-h2{
+h2 {
   margin: 3% 0;
 }
 
-.general-notes{
+.general-notes {
   text-align: center;
   display: block;
 }
 
-.slider{
+.slider {
   width: 55%;
   display: block;
   margin: 1% auto;
 }
 
-.window-frame{
+.window-frame {
   position: relative;
 }
 
-.window{
+.window {
   display: block;
   width: 87%;
   margin: 0 auto;
@@ -73,7 +73,7 @@ h2{
 }
 
 
-.post-it{
+.post-it {
   width: 96%;
   height: 7%;
   position: absolute;
@@ -85,11 +85,11 @@ h2{
   font-size: 1.4em;
 }
 
-.window .frame:nth-of-type(4) .post-it{
+.window .frame:nth-of-type(4) .post-it {
   height: 15%;
 }
 
-.arrows{
+.arrows {
   border-radius: 3px;
   width: 5%;
   position: absolute;
@@ -101,7 +101,7 @@ h2{
 
 
 
-#right-arrow{
+#right-arrow {
   right: 0;
 }
 
@@ -110,14 +110,14 @@ h2{
   transform: translateY(2px);
 }
 
-.tape-frame{
+.tape-frame {
   display: block;
   margin: 3% auto;
   margin-bottom: 10%;
   position: relative;
 }
 
-.substrate{
+.substrate {
   position: absolute;
   height: 55%;
   z-index: 50%;
@@ -127,7 +127,7 @@ h2{
   background-color: grey;
 }
 
-.tape .small-pic{
+.tape .small-pic {
   display: inline-block;
   width: 20.1%;
   margin: 3% 0.5%
@@ -137,27 +137,27 @@ h2{
   transform: translateX(17%);
 }
 
-.small-pic label img{
+.small-pic label img {
   width: 100%;
 }
 
 
-#photo-book{
+#photo-book {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   grid-gap:0.5%;
 }
 
-.neighborhoods{
+.neighborhoods {
   position: relative;
   margin-bottom: 1%;
 }
 
-.neighborhoods img{
+.neighborhoods img {
   width: 100%;
 }
 
-.area-name{
+.area-name {
   position: absolute;
   height: 20%;
   bottom: 0;
@@ -171,7 +171,7 @@ h2{
   font-family: "Petit Formal Script", cursive;
 }
 
-footer{
+footer {
   border-top: 2px solid #2d3c49;
   width: 100%;
   height: 30px;
@@ -185,7 +185,7 @@ footer{
 
 /*Slider window logic -------------------------------*/
 
-input{
+input {
    display: none;
 }
 
@@ -197,36 +197,36 @@ input{
   padding: 0;
 }
 
-.window .frame img{
+.window .frame img {
   width:100%;
 }
 
-#first:checked ~ .slider .window-frame .window .frame:nth-of-type(1){
+#first:checked ~ .slider .window-frame .window .frame:nth-of-type(1) {
   display:block;
 }
 
-#second:checked ~ .slider .window-frame .window .frame:nth-of-type(2){
+#second:checked ~ .slider .window-frame .window .frame:nth-of-type(2) {
   display:block;
 }
 
-#third:checked ~ .slider .window-frame .window .frame:nth-of-type(3){
+#third:checked ~ .slider .window-frame .window .frame:nth-of-type(3) {
   display:block;
 }
 
-#forth:checked ~ .slider .window-frame .window .frame:nth-of-type(4){
+#forth:checked ~ .slider .window-frame .window .frame:nth-of-type(4) {
   display:block;
 }
 
 /* Buttons logic ------------------------------------------------*/
 
-.arrows label img{
+.arrows label img {
   display: none;
 }
 
 #first:checked ~ .slider .window-frame #left-arrow label:nth-of-type(4) img,
 #second:checked ~ .slider .window-frame #left-arrow label:nth-of-type(1) img,
 #third:checked ~ .slider .window-frame #left-arrow label:nth-of-type(2) img,
-#forth:checked ~ .slider .window-frame #left-arrow label:nth-of-type(3) img{
+#forth:checked ~ .slider .window-frame #left-arrow label:nth-of-type(3) img {
   display:block;
   width: 100%;
 }
@@ -234,7 +234,7 @@ input{
 #first:checked ~ .slider .window-frame #right-arrow label:nth-of-type(2) img,
 #second:checked ~ .slider .window-frame #right-arrow label:nth-of-type(3) img,
 #third:checked ~ .slider .window-frame #right-arrow label:nth-of-type(4) img,
-#forth:checked ~ .slider .window-frame #right-arrow label:nth-of-type(1) img{
+#forth:checked ~ .slider .window-frame #right-arrow label:nth-of-type(1) img {
   display:block;
   width: 100%;
 }
@@ -244,7 +244,7 @@ input{
 #first:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(2),
 #second:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(3),
 #third:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(4),
-#forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(5){
+#forth:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(5) {
   width: 29%;
   transform: translateY(3%);
   transform: translateX(9%);
@@ -255,97 +255,107 @@ input{
 
 /* Responsiveness with Media query ------------------------------------ */
 
-@media screen and (min-width:700px) and (max-width:1200px){
+@media screen and (min-width:700px) and (max-width:1200px) {
 
-  .slider{
+  .slider {
     width: 75%;
   }
 
- .v-card{
+ .v-card {
    font-size: 2.3em;
  }
- .v-card p{
+
+ .v-card p {
    font-size: 0.7em;
  }
- h1{
+
+ h1 {
    font-size: 2.3em;
 }
 
- .window .frame:nth-of-type(4) .post-it{
+ .window .frame:nth-of-type(4) .post-it {
    font-size: 1.2em;
  }
-  .area-name{
+  .area-name {
     font-size: 2em;
   }
 }
 
-@media screen and (min-width:500px) and (max-width:699px){
+@media screen and (min-width:500px) and (max-width:699px) {
 
-  .slider{
+  .slider {
     width: 85%;
   }
 
-  .logo img{
+  .logo img {
     width: 50%;
   }
-  .v-card{
+
+  .v-card {
    font-size: 2.1em;
  }
- .v-card p{
+
+ .v-card p {
    font-size: 0.6em;
  }
- h1{
+
+ h1 {
    font-size: 2em;
 }
 
-.post-it{
+.post-it {
   font-size: 1.1em;
 }
-.window .frame:nth-of-type(4) .post-it{
+
+.window .frame:nth-of-type(4) .post-it {
   font-size: 1em;
 }
-  .area-name{
+
+.area-name {
     font-size: 1.7em;
-  }
+}
 }
 
 
-@media screen and (min-width:300px) and (max-width:499px){
+@media screen and (min-width:300px) and (max-width:499px) {
 
-  .slider{
+  .slider {
     width: 95%;
   }
 
-  .logo img{
+  .logo img {
     width: 35%;
   }
-  .v-card{
+  .v-card {
    font-size: 1.6em;
  }
- .v-card p{
+ .v-card p {
    font-size: 0.5em;
  }
- h1{
+
+ h1 {
    font-size: 1.5em;
 }
 
-.post-it{
+.post-it {
   font-size: 0.8em;
 }
-.window .frame:nth-of-type(4) .post-it{
+
+.window .frame:nth-of-type(4) .post-it {
   font-size: 0.7em;
   height: 13%;
 }
 
-h2{
+h2 {
   font-size: 1.3em;
 }
-  .area-name{
-    font-size: 1.5em;
-  }
 
-  .footer-content{
-    font-size: 0.7em;
-    text-align: left;
-  }
+.area-name {
+  font-size: 1.5em;
+}
+
+.footer-content {
+  font-size: 0.7em;
+  text-align: left;
+}
 }
