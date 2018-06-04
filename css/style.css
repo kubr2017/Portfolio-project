@@ -257,10 +257,10 @@ input{
 
 @media screen and (min-width:700px) and (max-width:1200px){
 
-  .name{
+ .v-card{
    font-size: 2.3em;
  }
- .cpeciality{
+ .v-card p{
    font-size: 1.3em;
  }
  h1{
@@ -276,10 +276,10 @@ input{
 }
 
 @media screen and (min-width:500px) and (max-width:699px){
-  .name{
+  .v-card{
    font-size: 2em;
  }
- .cpeciality{
+ .v-card p{
    font-size: 1em;
  }
  h1{
@@ -300,10 +300,10 @@ input{
   .logo img{
     width: 35%;
   }
-  .name{
+  .v-card{
    font-size: 1.7em;
  }
- .cpeciality{
+ .v-card p{
    font-size: 0.7em;
  }
  h1{
