@@ -247,7 +247,8 @@ input {
   width: 100%;
 }
 
-/* tape-frame logic ------------------------------------*/
+
+/* tape-frame logic ---------------------------------------*/
 
 #first:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(2),
 #second:checked~ .slider .tape-frame .tape .small-pic:nth-of-type(3),
@@ -267,15 +268,15 @@ input {
 
 .slider {
     width: 75%;
-  }
+}
 
 .v-card {
    font-size: 2.3em;
- }
+}
 
 .speciality {
    font-size: 0.7em;
- }
+}
 
 h1 {
    font-size: 2.3em;
@@ -283,7 +284,7 @@ h1 {
 
  .window .frame:nth-of-type(4) .post-it {
    font-size: 1.2em;
- }
+}
 
 .area-name {
     font-size: 2em;
@@ -294,19 +295,19 @@ h1 {
 
 .slider {
     width: 85%;
-  }
+}
 
 .logo-image {
     width: 50%;
-  }
+}
 
 .v-card {
    font-size: 2.1em;
- }
+}
 
 .speciality {
    font-size: 0.6em;
- }
+}
 
  h1 {
    font-size: 2em;
@@ -330,15 +331,15 @@ h1 {
 
 .slider {
     width: 95%;
-  }
+}
 
 .logo-image {
     width: 35%;
-  }
+}
 
 .v-card {
    font-size: 1.6em;
- }
+}
 
 .speciality {
    font-size: 0.5em;
