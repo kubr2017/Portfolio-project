@@ -29,7 +29,7 @@ position: relative;
   overflow: auto;
 }
 
-.v-card .speciality {
+.speciality {
   font-size: 0.8em;
   margin: 0;
 }
@@ -130,7 +130,7 @@ h2 {
   transform: translateX(17%);
 }
 
-.frame-image {
+.small-pic label img {
   width: 100%;
 }
 
@@ -257,7 +257,7 @@ input {
    font-size: 2.3em;
  }
 
-.v-card .speciality {
+.speciality {
    font-size: 0.7em;
  }
 
@@ -288,7 +288,7 @@ h1 {
    font-size: 2.1em;
  }
 
-.v-card .speciality {
+.speciality {
    font-size: 0.6em;
  }
 
@@ -324,7 +324,7 @@ h1 {
    font-size: 1.6em;
  }
 
-.v-card .speciality {
+.speciality {
    font-size: 0.5em;
  }
 
