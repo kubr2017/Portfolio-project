@@ -13,7 +13,7 @@ position: relative;
   float:left;
 }
 
-.logo img {
+.logo-image {
   width:75%;
 }
 
@@ -29,7 +29,7 @@ position: relative;
   overflow: auto;
 }
 
-.v-card p {
+.v-card .speciality {
   font-size: 0.8em;
   margin: 0;
 }
@@ -130,7 +130,7 @@ h2 {
   transform: translateX(17%);
 }
 
-.small-pic label img {
+.frame-image {
   width: 100%;
 }
 
@@ -257,7 +257,7 @@ input {
    font-size: 2.3em;
  }
 
-.v-card p {
+.v-card .speciality {
    font-size: 0.7em;
  }
 
@@ -280,7 +280,7 @@ h1 {
     width: 85%;
   }
 
-.logo img {
+.logo-image {
     width: 50%;
   }
 
@@ -288,7 +288,7 @@ h1 {
    font-size: 2.1em;
  }
 
- .v-card p {
+.v-card .speciality {
    font-size: 0.6em;
  }
 
@@ -316,7 +316,7 @@ h1 {
     width: 95%;
   }
 
-.logo img {
+.logo-image {
     width: 35%;
   }
 
@@ -324,7 +324,7 @@ h1 {
    font-size: 1.6em;
  }
 
-.v-card p {
+.v-card .speciality {
    font-size: 0.5em;
  }
 
